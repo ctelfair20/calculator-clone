@@ -14,9 +14,13 @@ const ButtonBox = ({ setDisplay, display }: ButtonBoxProps) => {
     setDisplay(newDisplay);
   }
 
+  const handleClearClick = () => {
+    setDisplay([]);
+  }
+
   return (
     <>
-      <button>AC</button>
+      <button onClick={handleClearClick}>AC</button>
       <button>-/+</button>
       <button>%</button>
       <button>/</button>
