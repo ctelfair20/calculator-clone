@@ -18,6 +18,13 @@ const ButtonBox = ({ setDisplay, display }: ButtonBoxProps) => {
     setDisplay([]);
   }
 
+  const handleOperatorClick = (oper: string) => {
+    console.log(oper);
+    let operand = display.join("");
+    console.log(operand);
+
+  }
+
   return (
     <>
       <button onClick={handleClearClick}>AC</button>
@@ -35,6 +42,10 @@ const ButtonBox = ({ setDisplay, display }: ButtonBoxProps) => {
       <button onClick={() => { handleNumberClick('3') }}>3</button>
       <button onClick={() => { handleNumberClick('0') }}>0</button>
       <button onClick={() => { handleNumberClick('.') }}>.</button>
+      <button onClick={() => { handleOperatorClick('x') }}>x</button>
+      <button onClick={() => { handleOperatorClick('/') }}>/</button>
+      <button onClick={() => { handleOperatorClick('+') }}>+</button>
+      <button onClick={() => { handleOperatorClick('-') }}>-</button>
       <button>=</button>
     </>
   );
