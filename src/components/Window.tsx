@@ -1,6 +1,6 @@
 const Window = () => {
   return (
-    <div>
+    <div className="window">
       winddow!
     </div>
   );

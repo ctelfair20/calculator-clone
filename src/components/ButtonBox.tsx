@@ -1,4 +1,4 @@
-const Button = () => {
+const ButtonBox = () => {
   return (
     <>
       <button>AC</button>
@@ -21,4 +21,4 @@ const Button = () => {
   );
 }
 
-export default Button;
+export default ButtonBox;
